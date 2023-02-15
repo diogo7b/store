@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "dev": "ts-node-dev src/index.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.4.0",
     "jest": "^29.4.2",
     "ts-jest": "^29.0.5",
     "ts-node-dev": "^2.0.0",
