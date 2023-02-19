@@ -1,12 +1,13 @@
-
-interface Validator {
+export interface Validator {
+    email: string;
     isEmailValid: boolean;
-    isEmail: (email: string) => boolean
 }
-const validator: Validator = {
-    isEmailValid: true,
 
-    isEmail: (email: string) => {
+export class Validator {
+    isEmailValid = true;
+    isEmail = async (email: string): Promise<boolean> => {
+        this.email = email
         return this.isEmailValid
-    }
+    };
+
 }
