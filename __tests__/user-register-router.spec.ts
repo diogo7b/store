@@ -35,7 +35,7 @@ const userRequest: UserRequest = {
 }
 
 describe("User Register Route", () => {
-    it("Should return 400 if no body is provided", async () => {
+    it("Should return 400 if param is no provided", async () => {
         const userRegisterRoute = new UserRegisterRoute()
         const response = await userRegisterRoute.save(userRequestWithError)
         expect(response).toEqual({ statusCode: 400, message: `Bad Request` })
