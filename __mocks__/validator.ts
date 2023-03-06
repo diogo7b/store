@@ -8,6 +8,15 @@ export class Validator {
     isEmail = async (email: string): Promise<boolean> => {
         this.email = email
         return this.isEmailValid
+        // return new Promise((resolve, reject) => {
+        //     if (this.isEmailValid === true) {
+        //         resolve(this.isEmailValid)
+        //     }
+
+        //     if (this.isEmailValid === false) {
+        //         reject(this.isEmailValid)
+        //     }
+        // })
     };
 
 }
